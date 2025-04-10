@@ -1,0 +1,114 @@
+{
+  "en": {
+    "brand_name": "Fara Khan",
+    "navbar": {
+      "start_btn": "Get Started"
+    },
+    "hero": {
+      "contact_btn": "Contact Me",
+      "hire_btn": "Hire Me",
+      "about_btn": "About Me",
+      "title": "I'm Foroozan, a Developer",
+      "description": "Coder, Environmentalist, Linguaphile, Bibliophile"
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "contact_btn": "Send Message",
+      "name_title": "Name",
+      "email_title": "Email",
+      "message_title": "Message",
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message to Me"
+    },
+    "about": {
+      "title": "About Me",
+      "description": "I am actively expanding my skill set by learning Frontend technologies, with the goal of becoming a Full Stack Developer. My passion for technology extends beyond coding; I have a strong interest in product management and digital product design. I am eager to pursue an internship in product management to gain hands-on experience and contribute to impactful projects within the software industry. I am currently converting some of my ideas into software projects, which I store in my GitHub account. I also push my learning code into the 'Learn' repositories I have created.",
+      "items": {
+        "one": "Skills",
+        "two": "Work Experiences",
+        "three": "Education",
+        "four": "Projects"
+      },
+      "projects": {
+        "demo_btn": "Live Demo"
+      }
+    },
+    "footer": {
+      "copyright": "© {{year}} Portfolio made by <creator>Fonij</creator>, Inspired by <inspiration>Leo Miranda's Landing page</inspiration>"
+    },
+    "home": {
+      "heroTitle": "Create Beautiful Digital Invitations",
+      "heroSubtitle": "Design and share stunning digital invitations for any occasion",
+      "createInvitation": "Create Your Invitation",
+      "advantages": {
+        "environment": "Eco-Friendly",
+        "environmentDesc": "Save paper and reduce waste with digital invitations",
+        "easy": "Easy to Use",
+        "easyDesc": "Simple and intuitive design process",
+        "fast": "Quick Delivery",
+        "fastDesc": "Send invitations instantly to your guests",
+        "diverse": "Diverse Templates",
+        "diverseDesc": "Choose from a wide range of beautiful designs",
+        "customizable": "Fully Customizable",
+        "customizableDesc": "Personalize every detail of your invitation"
+      }
+    }
+  },
+  "fa": {
+    "brand_name": "فراخوان",
+    "navbar": {
+      "start_btn": "فرا بخوان"
+    },
+    "hero": {
+      "contact_btn": "ارتباط با من",
+      "hire_btn": "استخدام من",
+      "about_btn": "درباره‌ی من",
+      "title": "",
+      "description": "من یه برنامه‌نویسم که عاشق کد زدنم. تفریحم کتاب خوندن و یاد گرفتن زبان‌های مختلفه. همیشه سعی می‌کنم جوری رفتار کنم که کمترین آسیب به محیط‌زیست برسه."
+    },
+    "contact": {
+      "title": "ارتباط با من",
+      "contact_btn": "فرستادن پیام",
+      "name_title": "نام",
+      "email_title": "ایمیل",
+      "message_title": "پیام",
+      "name": "نام شما",
+      "email": "ایمیل شما",
+      "message": "پیام شما به من"
+    },
+    "about": {
+      "title": "درباره‌ی من",
+      "description": "عاشق کد زدنم!",
+      "items": {
+        "one": "مهارت‌ها",
+        "two": "تجربه‌های کاری",
+        "three": "تحصیلات",
+        "four": "پروژه‌ها"
+      },
+      "projects": {
+        "demo_btn": "دموی پروژه"
+      }
+    },
+    "footer": {
+      "copyright": "© {{year}}  ساخته شده توسط <creator>Fonij</creator>، الهام گرفته از <inspiration>Leo Miranda's Landing page</inspiration>"
+    },
+    "home": {
+      "heroTitle": "ساخت کارت دعوت دیجیتال زیبا",
+      "heroSubtitle": "طراحی و به اشتراک‌گذاری کارت‌های دعوت دیجیتال برای هر مناسبت",
+      "createInvitation": "ساخت کارت دعوت",
+      "advantages": {
+        "environment": "دوستدار محیط زیست",
+        "environmentDesc": "با کارت‌های دعوت دیجیتال، کاغذ کمتری مصرف کنید",
+        "easy": "استفاده آسان",
+        "easyDesc": "فرآیند طراحی ساده و کاربرپسند",
+        "fast": "ارسال سریع",
+        "fastDesc": "ارسال فوری دعوت‌نامه به مهمانان",
+        "diverse": "قالب‌های متنوع",
+        "diverseDesc": "انتخاب از میان طیف وسیعی از طراحی‌های زیبا",
+        "customizable": "قابل شخصی‌سازی",
+        "customizableDesc": "شخصی‌سازی تمام جزئیات دعوت‌نامه شما"
+      }
+    }
+  }
+}
