@@ -4,111 +4,105 @@
     "navbar": {
       "start_btn": "Get Started"
     },
-    "hero": {
-      "contact_btn": "Contact Me",
-      "hire_btn": "Hire Me",
-      "about_btn": "About Me",
-      "title": "I'm Foroozan, a Developer",
-      "description": "Coder, Environmentalist, Linguaphile, Bibliophile"
+    "login": {
+      "title": "Login",
+      "phoneNumber": "Phone Number",
+      "sendOtp": "Send OTP",
+      "otp": "OTP",
+      "verifyOtp": "Verify OTP"
     },
-    "contact": {
-      "title": "Get in Touch",
-      "contact_btn": "Send Message",
-      "name_title": "Name",
-      "email_title": "Email",
-      "message_title": "Message",
-      "name": "Your Name",
-      "email": "Your Email",
-      "message": "Your Message to Me"
-    },
-    "about": {
-      "title": "About Me",
-      "description": "I am actively expanding my skill set by learning Frontend technologies, with the goal of becoming a Full Stack Developer. My passion for technology extends beyond coding; I have a strong interest in product management and digital product design. I am eager to pursue an internship in product management to gain hands-on experience and contribute to impactful projects within the software industry. I am currently converting some of my ideas into software projects, which I store in my GitHub account. I also push my learning code into the 'Learn' repositories I have created.",
-      "items": {
-        "one": "Skills",
-        "two": "Work Experiences",
-        "three": "Education",
-        "four": "Projects"
-      },
-      "projects": {
-        "demo_btn": "Live Demo"
-      }
-    },
-    "footer": {
-      "copyright": "© {{year}} Portfolio made by <creator>Fonij</creator>, Inspired by <inspiration>Leo Miranda's Landing page</inspiration>"
+    "profile": {
+      "title": "Profile",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "bio": "Bio",
+      "save": "Save Changes"
     },
     "home": {
-      "heroTitle": "Create Beautiful Digital Invitations",
-      "heroSubtitle": "Design and share stunning digital invitations for any occasion",
-      "createInvitation": "Create Your Invitation",
+      "heroTitle": "Create Beautiful Invitations",
+      "heroSubtitle": "Design and share your special moments with loved ones",
+      "createInvitation": "Create Invitation",
       "advantages": {
-        "environment": "Eco-Friendly",
-        "environmentDesc": "Save paper and reduce waste with digital invitations",
+        "environment": "Environment Friendly",
+        "environmentDesc": "Save trees by using digital invitations instead of paper",
         "easy": "Easy to Use",
-        "easyDesc": "Simple and intuitive design process",
-        "fast": "Quick Delivery",
-        "fastDesc": "Send invitations instantly to your guests",
-        "diverse": "Diverse Templates",
-        "diverseDesc": "Choose from a wide range of beautiful designs",
-        "customizable": "Fully Customizable",
-        "customizableDesc": "Personalize every detail of your invitation"
-      }
-    }
+        "easyDesc": "Create beautiful invitations in minutes with our user-friendly interface",
+        "fast": "Fast Delivery",
+        "fastDesc": "Send invitations instantly to all your guests",
+        "diverse": "Diverse Designs",
+        "diverseDesc": "Choose from a wide range of beautiful templates",
+        "customizable": "Customizable",
+        "customizableDesc": "Personalize every detail to match your style"
+      },
+      "featuredTemplates": "Featured Templates",
+      "weddingTemplate": "Wedding Invitation",
+      "weddingDescription": "Elegant designs for your special day",
+      "festivalTemplate": "Festival Invitation",
+      "festivalDescription": "Vibrant designs for your celebrations",
+      "ctaTitle": "Ready to Create Your Invitation?",
+      "ctaSubtitle": "Start designing your perfect invitation now",
+      "getStarted": "Get Started"
+    },
+    "footer": {
+      "copyright": "© {{year}} Celebrate It. All rights reserved.",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "contact": "Contact Us"
+    },
+    "myCelebrations": "My Celebrations"
   },
   "fa": {
     "brand_name": "فراخوان",
     "navbar": {
       "start_btn": "فرا بخوان"
     },
-    "hero": {
-      "contact_btn": "ارتباط با من",
-      "hire_btn": "استخدام من",
-      "about_btn": "درباره‌ی من",
-      "title": "",
-      "description": "من یه برنامه‌نویسم که عاشق کد زدنم. تفریحم کتاب خوندن و یاد گرفتن زبان‌های مختلفه. همیشه سعی می‌کنم جوری رفتار کنم که کمترین آسیب به محیط‌زیست برسه."
+    "login": {
+      "title": "ورود",
+      "phoneNumber": "شماره تلفن",
+      "sendOtp": "ارسال کد تایید",
+      "otp": "کد تایید",
+      "verifyOtp": "تایید کد"
     },
-    "contact": {
-      "title": "ارتباط با من",
-      "contact_btn": "فرستادن پیام",
-      "name_title": "نام",
-      "email_title": "ایمیل",
-      "message_title": "پیام",
-      "name": "نام شما",
-      "email": "ایمیل شما",
-      "message": "پیام شما به من"
-    },
-    "about": {
-      "title": "درباره‌ی من",
-      "description": "عاشق کد زدنم!",
-      "items": {
-        "one": "مهارت‌ها",
-        "two": "تجربه‌های کاری",
-        "three": "تحصیلات",
-        "four": "پروژه‌ها"
-      },
-      "projects": {
-        "demo_btn": "دموی پروژه"
-      }
-    },
-    "footer": {
-      "copyright": "© {{year}}  ساخته شده توسط <creator>Fonij</creator>، الهام گرفته از <inspiration>Leo Miranda's Landing page</inspiration>"
+    "profile": {
+      "title": "پروفایل",
+      "name": "نام کامل",
+      "email": "ایمیل",
+      "phone": "شماره تلفن",
+      "bio": "درباره من",
+      "save": "ذخیره تغییرات"
     },
     "home": {
-      "heroTitle": "ساخت کارت دعوت دیجیتال زیبا",
-      "heroSubtitle": "طراحی و به اشتراک‌گذاری کارت‌های دعوت دیجیتال برای هر مناسبت",
+      "heroTitle": "ساخت کارت‌های دعوت زیبا",
+      "heroSubtitle": "لحظات خاص خود را با عزیزانتان به اشتراک بگذارید",
       "createInvitation": "ساخت کارت دعوت",
       "advantages": {
         "environment": "دوستدار محیط زیست",
-        "environmentDesc": "با کارت‌های دعوت دیجیتال، کاغذ کمتری مصرف کنید",
+        "environmentDesc": "با استفاده از کارت‌های دعوت دیجیتال به جای کاغذ، در حفظ درختان مشارکت کنید",
         "easy": "استفاده آسان",
-        "easyDesc": "فرآیند طراحی ساده و کاربرپسند",
+        "easyDesc": "با رابط کاربری ساده ما، کارت‌های دعوت زیبا را در چند دقیقه بسازید",
         "fast": "ارسال سریع",
-        "fastDesc": "ارسال فوری دعوت‌نامه به مهمانان",
-        "diverse": "قالب‌های متنوع",
-        "diverseDesc": "انتخاب از میان طیف وسیعی از طراحی‌های زیبا",
+        "fastDesc": "کارت‌های دعوت را فوراً برای همه مهمانان خود ارسال کنید",
+        "diverse": "طرح‌های متنوع",
+        "diverseDesc": "از بین طیف گسترده‌ای از قالب‌های زیبا انتخاب کنید",
         "customizable": "قابل شخصی‌سازی",
-        "customizableDesc": "شخصی‌سازی تمام جزئیات دعوت‌نامه شما"
-      }
-    }
+        "customizableDesc": "هر جزئیات را مطابق با سلیقه خود شخصی‌سازی کنید"
+      },
+      "featuredTemplates": "قالب‌های برتر",
+      "weddingTemplate": "کارت دعوت عروسی",
+      "weddingDescription": "طراحی‌های شیک برای روز خاص شما",
+      "festivalTemplate": "کارت دعوت جشن",
+      "festivalDescription": "طراحی‌های پرانرژی برای جشن‌های شما",
+      "ctaTitle": "آماده ساخت کارت دعوت خود هستید؟",
+      "ctaSubtitle": "همین حالا طراحی کارت دعوت خود را شروع کنید",
+      "getStarted": "شروع کنید"
+    },
+    "footer": {
+      "copyright": "© {{year}} سلبریت. تمامی حقوق محفوظ است.",
+      "terms": "قوانین و مقررات",
+      "privacy": "حریم خصوصی",
+      "contact": "تماس با ما"
+    },
+    "myCelebrations": "جشن‌های من"
   }
 }
