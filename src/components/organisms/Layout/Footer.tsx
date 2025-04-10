@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Link } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
@@ -9,61 +9,20 @@ export const Footer = () => {
     <Box
       component="footer"
       sx={{
-        py: 4,
+        py: 2,
         px: 2,
-        backgroundColor: "background.paper",
-        borderTop: "1px solid",
-        borderColor: "divider",
+        backgroundColor: "transparent",
+        position: "fixed",
+        bottom: 0,
+        left: 0,
+        right: 0,
+        zIndex: 2,
       }}
     >
       <Container maxWidth="lg">
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 3,
-          }}
-        >
-          <Box
-            sx={{
-              display: "flex",
-              gap: 4,
-              flexWrap: "wrap",
-              justifyContent: "center",
-            }}
-          >
-            <Link
-              href="#"
-              color="inherit"
-              underline="hover"
-              sx={{ "&:hover": { color: "primary.main" } }}
-            >
-              {t("footer.terms")}
-            </Link>
-            <Link
-              href="#"
-              color="inherit"
-              underline="hover"
-              sx={{ "&:hover": { color: "primary.main" } }}
-            >
-              {t("footer.privacy")}
-            </Link>
-            <Link
-              href="#"
-              color="inherit"
-              underline="hover"
-              sx={{ "&:hover": { color: "primary.main" } }}
-            >
-              {t("footer.contact")}
-            </Link>
-          </Box>
-          <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-            <Typography variant="body2" color="text.secondary" align="center">
-              {t("footer.copyright", { year: currentYear })}
-            </Typography>
-          </Box>
-        </Box>
+        <Typography variant="body2" color="text.primary" align="center">
+          © {currentYear} {t("footer.copyright")}
+        </Typography>
       </Container>
     </Box>
   );

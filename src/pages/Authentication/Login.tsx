@@ -1,112 +1,147 @@
-import { useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
-import {
-  Box,
-  Container,
-  Typography,
-  TextField,
-  Button,
-  Link,
-  Paper,
-} from "@mui/material";
-import { useAuth } from "../../hooks/useAuth";
-import { useForm } from "../../hooks/useForm";
-import { required, email } from "../../hooks/useForm";
-import { useNotification } from "../../components/organisms/Notifications/NotificationProvider";
+import { Box, Container, Typography, Button, TextField, Divider, useTheme, useMediaQuery } from '@mui/material';
+import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import GoogleIcon from '@mui/icons-material/Google';
 
 export const Login = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
-  const location = useLocation();
-  const { login } = useAuth();
-  const { addNotification } = useNotification();
-  const [isLoading, setIsLoading] = useState(false);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-  const { formState, handleChange, handleBlur, validateForm } = useForm({
-    email: {
-      value: "",
-      rules: [required(), email()],
-    },
-    password: {
-      value: "",
-      rules: [required()],
-    },
-  });
+  const handleGoogleLogin = () => {
+    // Implement Google authentication
+    console.log('Google login clicked');
+  };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleEmailLogin = (e: React.FormEvent) => {
     e.preventDefault();
-
-    if (!validateForm()) {
-      return;
-    }
-
-    try {
-      setIsLoading(true);
-      await login(formState.email.value, formState.password.value);
-      const from =
-        (location.state as { from?: { pathname: string } })?.from?.pathname ||
-        "/";
-      navigate(from);
-    } catch (error) {
-      addNotification({
-        type: "error",
-        message: "Invalid email or password",
-      });
-    } finally {
-      setIsLoading(false);
-    }
+    // Implement email authentication
+    console.log('Email login submitted');
   };
 
   return (
-    <Container maxWidth="sm">
-      <Paper elevation={3} sx={{ p: 4, mt: 4 }}>
-        <Typography variant="h4" component="h1" gutterBottom align="center">
-          Login
-        </Typography>
-        <Box component="form" onSubmit={handleSubmit} sx={{ mt: 3 }}>
-          <TextField
-            fullWidth
-            label="Email"
-            name="email"
-            type="email"
-            value={formState.email.value}
-            onChange={(e) => handleChange("email", e.target.value)}
-            onBlur={() => handleBlur("email")}
-            error={!!formState.email.error}
-            helperText={formState.email.error}
-            margin="normal"
-          />
-          <TextField
-            fullWidth
-            label="Password"
-            name="password"
-            type="password"
-            value={formState.password.value}
-            onChange={(e) => handleChange("password", e.target.value)}
-            onBlur={() => handleBlur("password")}
-            error={!!formState.password.error}
-            helperText={formState.password.error}
-            margin="normal"
-          />
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            sx={{ mt: 3, mb: 2 }}
-            disabled={isLoading}
+    <Box
+      sx={{
+        width: '100vw',
+        height: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: 'linear-gradient(135deg, #A8D5BA 0%, #FFB5C2 100%)',
+      }}
+    >
+      <Container maxWidth="sm">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <Box
+            sx={{
+              backgroundColor: 'rgba(255, 255, 255, 0.9)',
+              backdropFilter: 'blur(10px)',
+              borderRadius: 2,
+              p: 4,
+              boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+            }}
           >
-            {isLoading ? "Logging in..." : "Login"}
-          </Button>
-          <Box sx={{ textAlign: "center" }}>
-            <Link
-              component="button"
-              variant="body2"
-              onClick={() => navigate("/register")}
+            <Typography
+              variant="h4"
+              component="h1"
+              align="center"
+              gutterBottom
+              sx={{ mb: 4, fontWeight: 'bold' }}
             >
-              Don't have an account? Register
-            </Link>
+              {t('login.welcome')}
+            </Typography>
+
+            <Button
+              fullWidth
+              variant="outlined"
+              startIcon={<GoogleIcon />}
+              onClick={handleGoogleLogin}
+              sx={{
+                mb: 3,
+                py: 1.5,
+                borderColor: 'text.primary',
+                color: 'text.primary',
+                '&:hover': {
+                  borderColor: 'primary.main',
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                },
+              }}
+            >
+              {t('login.continueWithGoogle')}
+            </Button>
+
+            <Divider sx={{ my: 3 }}>
+              <Typography variant="body2" color="text.secondary">
+                {t('login.or')}
+              </Typography>
+            </Divider>
+
+            <Box component="form" onSubmit={handleEmailLogin}>
+              <TextField
+                fullWidth
+                label={t('login.email')}
+                type="email"
+                margin="normal"
+                required
+                sx={{ mb: 2 }}
+              />
+              <TextField
+                fullWidth
+                label={t('login.password')}
+                type="password"
+                margin="normal"
+                required
+                sx={{ mb: 3 }}
+              />
+              <Button
+                fullWidth
+                variant="contained"
+                type="submit"
+                sx={{
+                  py: 1.5,
+                  mb: 2,
+                  backgroundColor: 'primary.main',
+                  '&:hover': {
+                    backgroundColor: 'primary.dark',
+                  },
+                }}
+              >
+                {t('login.signIn')}
+              </Button>
+            </Box>
+
+            <Typography
+              variant="body2"
+              align="center"
+              sx={{ mt: 2, color: 'text.secondary' }}
+            >
+              {t('login.noAccount')}{' '}
+              <Button
+                variant="text"
+                onClick={() => navigate('/signup')}
+                sx={{
+                  p: 0,
+                  textTransform: 'none',
+                  color: 'primary.main',
+                  '&:hover': {
+                    backgroundColor: 'transparent',
+                  },
+                }}
+              >
+                {t('login.signUp')}
+              </Button>
+            </Typography>
           </Box>
-        </Box>
-      </Paper>
-    </Container>
+        </motion.div>
+      </Container>
+    </Box>
   );
 };
+
+export default Login; 

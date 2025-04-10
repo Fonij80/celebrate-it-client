@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Home, Login, CelebrationFlow, Templates, MyCelebrations, Profile } from "./pages";
+import { Home, Login, CelebrationFlow, Templates, MyCelebrations, Profile, Contact } from "./pages";
 import { Layout, NotFoundError } from "./components/organisms";
 
 
@@ -32,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "profile",
         element: <Profile />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
     ],
   },

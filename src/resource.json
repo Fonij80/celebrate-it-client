@@ -1,15 +1,24 @@
 {
   "en": {
-    "brand_name": "Fara Khan",
+    "brand_name": "Celebrate It",
     "navbar": {
-      "start_btn": "Get Started"
+      "start_btn": "Get Started",
+      "language": "Language",
+      "social": {
+        "instagram": "Instagram",
+        "twitter": "Twitter",
+        "telegram": "Telegram"
+      }
     },
     "login": {
-      "title": "Login",
-      "phoneNumber": "Phone Number",
-      "sendOtp": "Send OTP",
-      "otp": "OTP",
-      "verifyOtp": "Verify OTP"
+      "welcome": "Welcome to Celebrate It",
+      "continueWithGoogle": "Continue with Google",
+      "or": "OR",
+      "email": "Email",
+      "password": "Password",
+      "signIn": "Sign In",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign Up"
     },
     "profile": {
       "title": "Profile",
@@ -20,8 +29,8 @@
       "save": "Save Changes"
     },
     "home": {
-      "heroTitle": "Create Beautiful Invitations",
-      "heroSubtitle": "Design and share your special moments with loved ones",
+      "heroTitle": "Create Beautiful Digital Invitations",
+      "heroSubtitle": "Design and share your special moments with loved ones through elegant digital invitations",
       "createInvitation": "Create Invitation",
       "advantages": {
         "environment": "Environment Friendly",
@@ -42,7 +51,8 @@
       "festivalDescription": "Vibrant designs for your celebrations",
       "ctaTitle": "Ready to Create Your Invitation?",
       "ctaSubtitle": "Start designing your perfect invitation now",
-      "getStarted": "Get Started"
+      "getStarted": "Get Started",
+      "seeTemplates": "See Templates"
     },
     "footer": {
       "copyright": "© {{year}} Celebrate It. All rights reserved.",
@@ -50,19 +60,47 @@
       "privacy": "Privacy Policy",
       "contact": "Contact Us"
     },
-    "myCelebrations": "My Celebrations"
+    "myCelebrations": "My Celebrations",
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "We'd love to hear from you",
+      "form": {
+        "name": "Full Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send Message"
+      },
+      "info": {
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address",
+        "social": "Follow Us"
+      },
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    }
   },
   "fa": {
-    "brand_name": "فراخوان",
+    "brand_name": "سلبریت",
     "navbar": {
-      "start_btn": "فرا بخوان"
+      "start_btn": "شروع کنید",
+      "language": "زبان",
+      "social": {
+        "instagram": "اینستاگرام",
+        "twitter": "توییتر",
+        "telegram": "تلگرام"
+      }
     },
     "login": {
-      "title": "ورود",
-      "phoneNumber": "شماره تلفن",
-      "sendOtp": "ارسال کد تایید",
-      "otp": "کد تایید",
-      "verifyOtp": "تایید کد"
+      "welcome": "به سلبریت خوش آمدید",
+      "continueWithGoogle": "ادامه با گوگل",
+      "or": "یا",
+      "email": "ایمیل",
+      "password": "رمز عبور",
+      "signIn": "ورود",
+      "noAccount": "حساب کاربری ندارید؟",
+      "signUp": "ثبت نام"
     },
     "profile": {
       "title": "پروفایل",
@@ -73,8 +111,8 @@
       "save": "ذخیره تغییرات"
     },
     "home": {
-      "heroTitle": "ساخت کارت‌های دعوت زیبا",
-      "heroSubtitle": "لحظات خاص خود را با عزیزانتان به اشتراک بگذارید",
+      "heroTitle": "ساخت کارت‌های دعوت دیجیتال زیبا",
+      "heroSubtitle": "لحظات خاص خود را با عزیزانتان از طریق کارت‌های دعوت دیجیتال شیک به اشتراک بگذارید",
       "createInvitation": "ساخت کارت دعوت",
       "advantages": {
         "environment": "دوستدار محیط زیست",
@@ -95,14 +133,34 @@
       "festivalDescription": "طراحی‌های پرانرژی برای جشن‌های شما",
       "ctaTitle": "آماده ساخت کارت دعوت خود هستید؟",
       "ctaSubtitle": "همین حالا طراحی کارت دعوت خود را شروع کنید",
-      "getStarted": "شروع کنید"
+      "getStarted": "شروع کنید",
+      "seeTemplates": "مشاهده قالب‌ها"
     },
     "footer": {
-      "copyright": "© {{year}} سلبریت. تمامی حقوق محفوظ است.",
+      "copyright": "تمامی حقوق برای فراخوان محفوظ است.",
       "terms": "قوانین و مقررات",
       "privacy": "حریم خصوصی",
       "contact": "تماس با ما"
     },
-    "myCelebrations": "جشن‌های من"
+    "myCelebrations": "جشن‌های من",
+    "contact": {
+      "title": "تماس با ما",
+      "subtitle": "ما مشتاقانه منتظر پیام شما هستیم",
+      "form": {
+        "name": "نام و نام خانوادگی",
+        "email": "ایمیل",
+        "subject": "موضوع",
+        "message": "پیام",
+        "send": "ارسال پیام"
+      },
+      "info": {
+        "email": "ایمیل",
+        "phone": "تلفن",
+        "address": "آدرس",
+        "social": "ما را دنبال کنید"
+      },
+      "success": "پیام شما با موفقیت ارسال شد!",
+      "error": "ارسال پیام با خطا مواجه شد. لطفا دوباره تلاش کنید."
+    }
   }
 }

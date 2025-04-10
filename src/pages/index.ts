@@ -2,6 +2,8 @@ export { Home } from "./Home";
 
 export { Login } from "./Authentication/Login";
 
+export { Contact } from "./Contact";
+
 export { Profile } from "./Dashboard/Profile";
 
 export { CelebrationFlow } from "./CardDesign/CelebrationFlow";
