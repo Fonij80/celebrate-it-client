@@ -8,7 +8,7 @@ import {
   Profile,
   Contact,
 } from "./pages";
-import { Layout, NotFoundError } from "./components/organisms";
+import { Layout, NotFoundError, InvitationCard } from "./components/organisms";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "profile",
         element: <Profile />,
+      },
+      {
+        path: "invite",
+        element: <InvitationCard />,
       },
     ],
   },

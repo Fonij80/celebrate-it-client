@@ -86,7 +86,7 @@ export const Advantages = () => {
                   minWidth: 280,
                   height: 200,
                   backgroundColor: "transparent",
-                  backdropFilter: "blur(10px)",
+                  // backdropFilter: "blur(10px)",
                   transition: "transform 0.3s ease-in-out",
                   "&:hover": {
                     transform: "translateY(8px)",
@@ -102,7 +102,7 @@ export const Advantages = () => {
                     justifyContent: "center",
                   }}
                 >
-                  <Typography variant="h2" sx={{ mb: 2 }}>
+                  <Typography variant="h2" sx={{ mb: 2, fontSize: "4rem" }}>
                     {advantage.icon}
                   </Typography>
                   <Typography variant="h6" component="h3" gutterBottom>

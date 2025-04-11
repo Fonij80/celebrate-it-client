@@ -11,3 +11,5 @@ export { Recipients } from "./Celebration/Recipients";
 
 export { TemplateSelection } from "./Templates/TemplateSelection";
 export { TemplateCard } from "./Templates/TemplateCard";
+
+export { InvitationCard } from "./InvitationCard";

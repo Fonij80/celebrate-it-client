@@ -49,7 +49,6 @@ export const Login = () => {
         >
           <Box
             sx={{
-              backgroundColor: "rgba(255, 255, 255, 0.9)",
               backdropFilter: "blur(10px)",
               borderRadius: 2,
               p: 4,

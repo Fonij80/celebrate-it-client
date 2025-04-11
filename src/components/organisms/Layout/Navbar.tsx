@@ -36,7 +36,7 @@ export const Navbar = () => {
         <Logo />
       </Box>
       <Stack direction="row" spacing={2} alignItems="center">
-        <SocialLinks />
+        <SocialLinks iconColor="inherit" size="small" />
         <HashLink
           smooth
           to="/#contact"
@@ -87,7 +87,7 @@ export const Navbar = () => {
             </HashLink>
           </MenuItem>
           <MenuItem>
-            <SocialLinks />
+            <SocialLinks iconColor="inherit" size="small" />
           </MenuItem>
         </Menu>
       </Box>
@@ -96,7 +96,7 @@ export const Navbar = () => {
 
   return (
     <AppBar
-      position="static"
+      position="fixed"
       elevation={0}
       sx={{
         width: "100%",

@@ -1,41 +1,36 @@
-import { IconButton } from "@mui/material";
+import { Box } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import TelegramIcon from "@mui/icons-material/Telegram";
-import { useTranslation } from "react-i18next";
+import { SocialLinkButton } from "../atoms";
+import { IconButtonProps } from "@mui/material";
 
-export const SocialLinks = () => {
-  const { t } = useTranslation();
+interface SocialLinksProps {
+  iconColor: IconButtonProps["color"];
+  size: IconButtonProps["size"];
+}
 
+export const SocialLinks = ({ iconColor, size }: SocialLinksProps) => {
   return (
-    <>
-      <IconButton
-        color="inherit"
+    <Box sx={{ display: "flex", gap: 2, mt: 3 }}>
+      <SocialLinkButton
+        icon={<InstagramIcon />}
         href="https://instagram.com"
-        target="_blank"
-        size="small"
-        title={t("navbar.social.instagram")}
-      >
-        <InstagramIcon />
-      </IconButton>
-      <IconButton
-        color="inherit"
+        iconColor={iconColor}
+        size={size}
+      />
+      <SocialLinkButton
+        icon={<TwitterIcon />}
         href="https://twitter.com"
-        target="_blank"
-        size="small"
-        title={t("navbar.social.twitter")}
-      >
-        <TwitterIcon />
-      </IconButton>
-      <IconButton
-        color="inherit"
+        iconColor={iconColor}
+        size={size}
+      />
+      <SocialLinkButton
+        icon={<TelegramIcon />}
         href="https://telegram.org"
-        target="_blank"
-        size="small"
-        title={t("navbar.social.telegram")}
-      >
-        <TelegramIcon />
-      </IconButton>
-    </>
+        iconColor={iconColor}
+        size={size}
+      />
+    </Box>
   );
 };

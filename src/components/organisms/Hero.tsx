@@ -51,7 +51,6 @@ export const Hero = () => {
         </Typography>
         <Typography
           variant={isMobile ? "h6" : "h5"}
-          paragraph
           sx={{
             mb: 6,
             maxWidth: "800px",
@@ -64,13 +63,18 @@ export const Hero = () => {
         </Typography>
         <Stack
           direction={{ xs: "column", sm: "row" }}
-          spacing={2}
-          justifyContent="center"
-          sx={{ mb: 8 }}
+          spacing={{ xs: 2, sm: 4 }}
+          justifyContent="space-between"
+          sx={{
+            mb: 8,
+            width: { xs: "100%", sm: "80%", md: "60%" },
+            mx: "auto",
+          }}
         >
           <Button
             variant="contained"
             size="large"
+            fullWidth
             onClick={() => navigate("/login")}
             sx={{
               px: 6,
@@ -88,6 +92,7 @@ export const Hero = () => {
           <Button
             variant="outlined"
             size="large"
+            fullWidth
             onClick={() => navigate("/templates")}
             sx={{
               px: 6,
