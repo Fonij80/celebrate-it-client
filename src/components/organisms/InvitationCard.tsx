@@ -14,17 +14,19 @@ export const InvitationCard = () => {
   return (
     <Box
       sx={{
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)", // Centers the box
         perspective: "1000px",
-        width: 400,
-        height: 500,
-        position: "relative",
-        m: 4,
+        width: 1000, // Increased width
+        height: 700, // Increased height
       }}
     >
       {/* Envelope Container */}
       <Box
         sx={{
-          position: "relative",
+          position: "static",
           width: "100%",
           height: "100%",
           transformStyle: "preserve-3d",
@@ -62,17 +64,57 @@ export const InvitationCard = () => {
             padding: 2,
           }}
         >
+          {/* Centered Lock Icon */}
           <IconButton
             sx={{
               position: "absolute",
-              right: 16,
-              top: 16,
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
               color: "gold",
             }}
             onClick={() => setIsOpen(true)}
           >
             <LockOpen fontSize="large" />
           </IconButton>
+
+          {/* Diagonal Lines */}
+          {/* <Box
+            sx={{
+              position: "absolute",
+              top: "10%",
+              left: "10%",
+              width: "80%",
+              height: "80%",
+            }}
+          >
+            <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                border: "2px solid white",
+                borderStyle: "solid none none solid",
+                transform: "rotate(45deg)",
+                transformOrigin: "top left",
+              }}
+            />
+            <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                border: "2px solid white",
+                borderStyle: "none solid solid none",
+                transform: "rotate(-45deg)",
+                transformOrigin: "top left",
+              }}
+            />
+          </Box> */}
         </Paper>
       </Box>
 

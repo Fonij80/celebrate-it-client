@@ -13,3 +13,5 @@ export { TemplateSelection } from "./Templates/TemplateSelection";
 export { TemplateCard } from "./Templates/TemplateCard";
 
 export { InvitationCard } from "./InvitationCard";
+
+export { LoginForm } from "./Forms/LoginForm";
