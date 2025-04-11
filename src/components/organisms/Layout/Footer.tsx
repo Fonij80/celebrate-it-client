@@ -9,14 +9,14 @@ export const Footer = () => {
     <Box
       component="footer"
       sx={{
-        py: 2,
-        px: 2,
+        // py: 2,
+        // px: 2,
         backgroundColor: "transparent",
         position: "fixed",
-        bottom: 0,
-        left: 0,
-        right: 0,
-        zIndex: 2,
+        // bottom: 0,
+        // left: 0,
+        // right: 0,
+        // zIndex: 2,
       }}
     >
       <Container maxWidth="lg">
