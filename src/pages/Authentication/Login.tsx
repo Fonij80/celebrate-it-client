@@ -14,7 +14,7 @@ export const Login = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        background: "linear-gradient(135deg, #A8D5BA 0%, #FFB5C2 100%)",
+        background: "linear-gradient(135deg, #658147 0%, #B99470 100%)",
       }}
     >
       <Container maxWidth="sm">

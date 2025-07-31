@@ -75,7 +75,7 @@ export const Hero = () => {
             variant="contained"
             size="large"
             fullWidth
-            onClick={() => navigate("/login")}
+            onClick={() => navigate("/get-started")}
             sx={{
               px: 6,
               py: 2,
@@ -89,7 +89,7 @@ export const Hero = () => {
           >
             {t("home.getStarted")}
           </Button>
-          <Button
+          {/* <Button
             variant="outlined"
             size="large"
             fullWidth
@@ -106,7 +106,7 @@ export const Hero = () => {
             }}
           >
             {t("home.seeTemplates")}
-          </Button>
+          </Button> */}
         </Stack>
       </motion.div>
     </Container>

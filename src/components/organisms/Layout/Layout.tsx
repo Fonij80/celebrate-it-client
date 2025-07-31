@@ -8,9 +8,10 @@ export const Layout = () => {
     <Box
       sx={{
         minHeight: "100vh",
-        background: "linear-gradient(135deg, #A8D5BA 0%, #FFB5C2 100%)",
-        display: "flex",
-        flexDirection: "column",
+        background: "linear-gradient(180deg, #BBD8A3 0%, #B99470 100%)",
+        // background: "#BBD8A3",
+        // display: "flex",
+        // flexDirection: "column",
       }}
     >
       <Navbar />

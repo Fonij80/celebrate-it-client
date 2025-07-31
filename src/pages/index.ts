@@ -9,3 +9,4 @@ export { Profile } from "./Dashboard/Profile";
 export { CelebrationFlow } from "./CardDesign/CelebrationFlow";
 export { MyCelebrations } from "./CardDesign/MyCelebrations";
 export { Templates } from "./CardDesign/Templates";
+export { Categories } from "./CardDesign/Categories";

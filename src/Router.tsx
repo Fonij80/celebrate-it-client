@@ -7,6 +7,7 @@ import {
   MyCelebrations,
   Profile,
   Contact,
+  Categories,
 } from "./pages";
 import { Layout, NotFoundError, InvitationCard } from "./components/organisms";
 
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "invite",
         element: <InvitationCard />,
+      },
+      {
+        path: "get-started",
+        element: <CelebrationFlow />,
       },
     ],
   },

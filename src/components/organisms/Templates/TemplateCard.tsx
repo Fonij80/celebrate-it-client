@@ -21,8 +21,10 @@ export const TemplateCard = ({
           height: "100%",
           cursor: "pointer",
           transition: "transform 0.2s",
+          backgroundColor: "transparent", // <-- Make card background transparent
+          boxShadow: "none", // Optional: remove shadow if you want fully transparent look
           "&:hover": {
-            boxShadow: 6,
+            boxShadow: 6, // You can keep or remove hover shadow
           },
         }}
         onClick={onClick}
@@ -33,7 +35,7 @@ export const TemplateCard = ({
               textAlign: "center",
               mb: 2,
               p: 2,
-              backgroundColor: "rgba(0, 0, 0, 0.02)",
+              backgroundColor: "transparent",
               borderRadius: 1,
             }}
           >

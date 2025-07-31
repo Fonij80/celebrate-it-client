@@ -18,10 +18,10 @@ import {
 } from "../../components/organisms";
 
 const steps = [
-  "Choose Celebration",
-  "Select Recipients",
-  "Pick Template",
-  "Customize",
+  "انتخاب مناسبت",
+  "انتخاب گیرنده‌ها",
+  "انتخاب کارت",
+  "انتخاب پاکت",
 ];
 
 export const CelebrationFlow = () => {

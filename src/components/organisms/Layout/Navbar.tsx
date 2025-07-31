@@ -37,7 +37,7 @@ export const Navbar = () => {
       </Box>
       <Stack direction="row" spacing={2} alignItems="center">
         <SocialLinks iconColor="inherit" size="small" />
-        <HashLink
+        {/* <HashLink
           smooth
           to="/#contact"
           style={{ textDecoration: "none", color: "inherit" }}
@@ -52,7 +52,7 @@ export const Navbar = () => {
           sx={{ textTransform: "none" }}
         >
           {t("navbar.start_btn")}
-        </Button>
+        </Button> */}
       </Stack>
     </>
   );

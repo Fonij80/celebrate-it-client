@@ -11,7 +11,7 @@ export const Home = () => {
           height: "100vh",
           position: "relative",
           overflow: "hidden",
-          background: "linear-gradient(135deg, #A8D5BA 0%, #FFB5C2 100%)",
+          // background: "linear-gradient(135deg, #658147 0%, #B99470 100%)",
         }}
       >
         {/* Hero Content */}
@@ -20,7 +20,7 @@ export const Home = () => {
         {/* Animated Advantages Section */}
         <Advantages />
       </Box>
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 };
